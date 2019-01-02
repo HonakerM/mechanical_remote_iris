@@ -860,6 +860,8 @@ design rules under a new name.</description>
 <vertex x="50.8" y="-11.43"/>
 <vertex x="0" y="-11.43"/>
 </polygon>
+<contactref element="D1" pad="A"/>
+<wire x1="10.94" y1="13.56" x2="17.78" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="INPUTPOWER" pad="2"/>
