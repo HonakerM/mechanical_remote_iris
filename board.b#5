@@ -830,10 +830,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="11.938" y="18.161" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="11.938" y="13.589" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="PARRELLCAPACITOR" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="01uf" x="27.94" y="20.32" smashed="yes">
-<attribute name="NAME" x="25.908" y="21.844" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="25.908" y="17.526" size="1.27" layer="27" ratio="10"/>
-</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -864,7 +860,6 @@ design rules under a new name.</description>
 <vertex x="50.8" y="-11.43"/>
 <vertex x="0" y="-11.43"/>
 </polygon>
-<contactref element="D1" pad="A"/>
 </signal>
 <signal name="N$3">
 <contactref element="INPUTPOWER" pad="2"/>
@@ -903,16 +898,8 @@ design rules under a new name.</description>
 <wire x1="12.7" y1="30.48" x2="10.16" y2="30.48" width="0.254" layer="1"/>
 <wire x1="10.16" y1="30.48" x2="7.62" y2="33.02" width="0.254" layer="1"/>
 <wire x1="7.62" y1="33.02" x2="7.62" y2="36.83" width="0.254" layer="1"/>
-<contactref element="PARRELLCAPACITOR" pad="1"/>
-<contactref element="PARRELLCAPACITOR" pad="2"/>
 <wire x1="12.7" y1="30.48" x2="29.75" y2="13.43" width="0.254" layer="1"/>
 <wire x1="29.75" y1="13.43" x2="33.02" y2="13.43" width="0.254" layer="1"/>
-<wire x1="12.7" y1="30.48" x2="22.86" y2="20.32" width="0.254" layer="1"/>
-<wire x1="22.86" y1="20.32" x2="25.4" y2="20.32" width="0.254" layer="1"/>
-<wire x1="33.02" y1="13.43486875" x2="33.02" y2="13.43" width="0.254" layer="1"/>
-<wire x1="30.4706" y1="15.98426875" x2="33.02" y2="13.43486875" width="0.254" layer="1"/>
-<wire x1="30.48" y1="20.32" x2="30.4706" y2="20.3106" width="0.254" layer="1"/>
-<wire x1="30.4706" y1="20.3106" x2="30.4706" y2="15.98426875" width="0.254" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="RESISTOR" pad="2"/>
