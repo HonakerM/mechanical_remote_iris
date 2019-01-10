@@ -4701,13 +4701,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="25.4" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="RESISTOR" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="83.82" x2="48.26" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="83.82" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
@@ -4722,6 +4715,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="10.16" y1="93.98" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="E"/>
 <wire x1="10.16" y1="91.44" x2="10.16" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="RESISTOR" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="83.82" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="81.28" x2="91.44" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="81.28" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GPIO0"/>
+<wire x1="91.44" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

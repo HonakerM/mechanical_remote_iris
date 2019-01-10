@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4499,66 +4499,66 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="RESISTOR" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="0207/10" package3d_urn="urn:adsk.eagle:package:13275/1" value="1000"/>
 <part name="D1" library="_mod_diode" deviceset="1N581*" device="" technology="7-T"/>
 <part name="PARRELLCAPACITOR" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="5/2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="01uf"/>
-<part name="U$1" library="esp8266modules" deviceset="ESP01" device=""/>
+<part name="MICROCONTROLLER" library="esp8266modules" deviceset="ESP01" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="INPUTPOWER" gate="A" x="-58.42" y="55.88" smashed="yes">
+<instance part="INPUTPOWER" gate="A" x="-58.42" y="55.88">
 <attribute name="NAME" x="-66.04" y="64.16" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-66.04" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="CAPCAITOR2" gate="G$1" x="-83.82" y="50.8" smashed="yes">
+<instance part="CAPCAITOR2" gate="G$1" x="-83.82" y="50.8">
 <attribute name="NAME" x="-82.296" y="51.181" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-82.296" y="46.101" size="1.778" layer="96"/>
 </instance>
-<instance part="OUTPUTINDUCTOR" gate="G$1" x="-20.32" y="55.88" smashed="yes" rot="R90">
+<instance part="OUTPUTINDUCTOR" gate="G$1" x="-20.32" y="55.88" rot="R90">
 <attribute name="NAME" x="-16.51" y="54.3814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-16.51" y="59.182" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="CAPCAITOR1" gate="G$1" x="-10.16" y="45.72" smashed="yes">
+<instance part="CAPCAITOR1" gate="G$1" x="-10.16" y="45.72">
 <attribute name="NAME" x="-8.636" y="46.101" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-8.636" y="41.021" size="1.778" layer="96"/>
 </instance>
-<instance part="CONTROLLERPOWER" gate="G$1" x="17.78" y="53.34" smashed="yes">
+<instance part="CONTROLLERPOWER" gate="G$1" x="17.78" y="53.34">
 <attribute name="NAME" x="20.32" y="48.26" size="1.778" layer="95"/>
 <attribute name="VALUE" x="20.32" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="CAPCAITOR3" gate="G$1" x="5.08" y="45.72" smashed="yes">
+<instance part="CAPCAITOR3" gate="G$1" x="5.08" y="45.72">
 <attribute name="NAME" x="6.604" y="46.101" size="1.778" layer="95"/>
 <attribute name="VALUE" x="6.604" y="41.021" size="1.778" layer="96"/>
 </instance>
-<instance part="CAPCAITOR4" gate="G$1" x="33.02" y="45.72" smashed="yes">
+<instance part="CAPCAITOR4" gate="G$1" x="33.02" y="45.72">
 <attribute name="NAME" x="34.544" y="46.101" size="1.778" layer="95"/>
 <attribute name="VALUE" x="34.544" y="41.021" size="1.778" layer="96"/>
 </instance>
-<instance part="SERVOOUT" gate="A" x="17.78" y="104.14" smashed="yes">
+<instance part="SERVOOUT" gate="A" x="17.78" y="104.14">
 <attribute name="NAME" x="11.43" y="109.855" size="1.778" layer="95"/>
 <attribute name="VALUE" x="11.43" y="96.52" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="-93.98" y="45.72" smashed="yes">
+<instance part="J1" gate="G$1" x="-93.98" y="45.72">
 <attribute name="VALUE" x="-104.14" y="55.88" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-104.14" y="45.72" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="T1" gate="G$1" x="15.24" y="83.82" smashed="yes" rot="R180">
+<instance part="T1" gate="G$1" x="15.24" y="83.82" rot="R180">
 <attribute name="NAME" x="21.59" y="76.2" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="19.304" y="78.74" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="RESISTOR" gate="G$1" x="30.48" y="83.82" smashed="yes" rot="R180">
+<instance part="RESISTOR" gate="G$1" x="30.48" y="83.82" rot="R180">
 <attribute name="NAME" x="34.29" y="82.3214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="34.29" y="87.122" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D1" gate="G$1" x="-33.02" y="45.72" smashed="yes" rot="R90">
+<instance part="D1" gate="G$1" x="-33.02" y="45.72" rot="R90">
 <attribute name="NAME" x="-34.925" y="43.434" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-29.591" y="43.434" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="PARRELLCAPACITOR" gate="G$1" x="45.72" y="40.64" smashed="yes" rot="R90">
+<instance part="PARRELLCAPACITOR" gate="G$1" x="45.72" y="40.64" rot="R90">
 <attribute name="NAME" x="45.339" y="42.164" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="50.419" y="42.164" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$1" gate="G$1" x="71.12" y="50.8" smashed="yes" rot="R180">
+<instance part="MICROCONTROLLER" gate="G$1" x="71.12" y="50.8" rot="R180">
 <attribute name="NAME" x="83.82" y="40.64" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="83.82" y="55.88" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -4642,7 +4642,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="86.36" y="93.98"/>
 <wire x1="86.36" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="93.98" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="MICROCONTROLLER" gate="G$1" pin="GND"/>
 <wire x1="99.06" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 <junction x="99.06" y="43.18"/>
 <wire x1="99.06" y1="38.1" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
@@ -4698,7 +4698,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="43.18" y1="43.18" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="43.18" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
 <junction x="43.18" y="43.18"/>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="MICROCONTROLLER" gate="G$1" pin="VCC"/>
 <wire x1="53.34" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
 <junction x="53.34" y="43.18"/>
 <pinref part="PARRELLCAPACITOR" gate="G$1" pin="2"/>
@@ -4728,7 +4728,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="35.56" y1="83.82" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="81.28" x2="91.44" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="81.28" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GPIO0"/>
+<pinref part="MICROCONTROLLER" gate="G$1" pin="GPIO0"/>
 <wire x1="91.44" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>

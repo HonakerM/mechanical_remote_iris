@@ -4689,6 +4689,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="53.34" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
 <junction x="53.34" y="43.18"/>
+<pinref part="PARRELLCAPACITOR" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="43.18" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="40.64" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">

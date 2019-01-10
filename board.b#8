@@ -912,6 +912,8 @@ design rules under a new name.</description>
 <wire x1="12.7" y1="30.48" x2="22.86" y2="20.32" width="0.254" layer="1"/>
 <wire x1="22.86" y1="20.32" x2="25.4" y2="20.32" width="0.254" layer="1"/>
 <contactref element="U$1" pad="VCC"/>
+<contactref element="PARRELLCAPACITOR" pad="2"/>
+<wire x1="25.4" y1="20.32" x2="30.48" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.365" y1="-8.1775" x2="22.86" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
@@ -919,17 +921,6 @@ design rules under a new name.</description>
 <contactref element="T1" pad="1"/>
 <wire x1="35.56" y1="7.62" x2="30.48" y2="2.54" width="0.254" layer="1"/>
 <wire x1="26.67" y1="2.54" x2="30.48" y2="2.54" width="0.254" layer="1"/>
-</signal>
-<signal name="N$9">
-<contactref element="RESISTOR" pad="1"/>
-<wire x1="25.4" y1="7.81" x2="25.4" y2="7.62" width="0.254" layer="1"/>
-<wire x1="34.13573125" y1="14.3094" x2="34.2994" y2="14.14573125" width="0.254" layer="1"/>
-<wire x1="34.2994" y1="14.14573125" x2="34.2994" y2="12.71426875" width="0.254" layer="1"/>
-<wire x1="34.2994" y1="12.71426875" x2="34.13573125" y2="12.5506" width="0.254" layer="1"/>
-<wire x1="33.02" y1="15.24" x2="33.9506" y2="14.3094" width="0.254" layer="1"/>
-<wire x1="33.9506" y1="14.3094" x2="34.13573125" y2="14.3094" width="0.254" layer="1"/>
-<wire x1="30.3306" y1="12.5506" x2="25.4" y2="7.62" width="0.254" layer="1"/>
-<wire x1="34.13573125" y1="12.5506" x2="30.3306" y2="12.5506" width="0.254" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="T1" pad="2"/>
@@ -939,6 +930,11 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$2">
 <contactref element="T1" pad="3"/>
+</signal>
+<signal name="N$9">
+<contactref element="RESISTOR" pad="1"/>
+<contactref element="U$1" pad="GPIO0"/>
+<wire x1="-8.905" y1="-5.6375" x2="25.4" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
