@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -158,10 +158,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="-12.7" x2="52.05" y2="-12.7" width="0" layer="20"/>
-<wire x1="52.05" y1="-12.7" x2="52.05" y2="39.04" width="0" layer="20"/>
-<wire x1="52.05" y1="39.04" x2="0" y2="39.04" width="0" layer="20"/>
-<wire x1="0" y1="39.04" x2="0" y2="-12.7" width="0" layer="20"/>
+<wire x1="0" y1="-11.811" x2="49.51" y2="-11.811" width="0" layer="20"/>
+<wire x1="49.51" y1="-11.811" x2="49.51" y2="38.659" width="0" layer="20"/>
+<wire x1="49.51" y1="38.659" x2="0" y2="38.659" width="0" layer="20"/>
+<wire x1="0" y1="38.659" x2="0" y2="-11.811" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -770,73 +770,72 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="INPUTPOWER" library="lm2575" package="TO220-5" value="LM2575-5.0T" x="2.54" y="10.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.922" y="5.08" size="1.27" layer="25" rot="R180"/>
+<element name="5VOLTREG" library="lm2575" package="TO220-5" value="LM2575-5.0T" x="2.54" y="10.16" rot="R90">
+<attribute name="NAME" x="3.302" y="13.97" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="12.192" y="16.51" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="CAPCAITOR2" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="100uf" x="17.78" y="6.35" smashed="yes">
+<element name="BATCAP" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="100uf" x="17.78" y="6.35">
 <attribute name="NAME" x="15.748" y="7.874" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="15.748" y="3.556" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="OUTPUTINDUCTOR" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="0204/7" package3d_urn="urn:adsk.eagle:package:13274/1" value="330uH" x="6.35" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="5.0546" y="17.78" size="0.9906" layer="25" ratio="10" rot="R90"/>
+<element name="5REGINDUC" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="0204/7" package3d_urn="urn:adsk.eagle:package:13274/1" value="330uH" x="6.35" y="20.32" rot="R90">
+<attribute name="NAME" x="5.0546" y="17.526" size="0.9906" layer="25" ratio="10" rot="R90"/>
 <attribute name="SPICEMODEL" value="NONE" x="6.35" y="20.32" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="L" x="6.35" y="20.32" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="6.8326" y="18.6944" size="0.9906" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="CAPCAITOR1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="1000uf" x="12.7" y="24.13" smashed="yes">
-<attribute name="NAME" x="10.668" y="25.654" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="10.668" y="21.336" size="1.27" layer="27" ratio="10"/>
+<element name="5REGCAP" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="1000uf" x="12.7" y="23.876">
+<attribute name="NAME" x="8.89" y="25.146" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="10.414" y="21.844" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="CONTROLLERPOWER" library="LD1117V33" package="LD1117V33" value="LD1117V33" x="21.59" y="30.48" smashed="yes" rot="R270">
+<element name="3VOLTREG" library="LD1117V33" package="LD1117V33" value="LD1117V33" x="21.59" y="30.48" rot="R270">
 <attribute name="NAME" x="21.59" y="34.29" size="1.778" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="19.05" y="34.417" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="CAPCAITOR3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="100nf" x="5.08" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="10.922" y="26.416" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="7.112" y="30.734" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="3REGCAP" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="100nf" x="5.08" y="27.94" rot="R180">
+<attribute name="NAME" x="9.652" y="31.496" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="7.366" y="29.972" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="CAPCAITOR4" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="10uf" x="5.08" y="36.83" smashed="yes" rot="R180">
-<attribute name="NAME" x="10.922" y="39.116" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="7.112" y="37.084" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="3REGOUTCAP" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="10uf" x="5.08" y="36.83" rot="R180">
+<attribute name="NAME" x="12.065" y="34.925" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="6.477" y="36.195" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="SERVOOUT" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="29.21" y="-8.89" smashed="yes">
+<element name="SERVOOUT" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="29.21" y="-8.89">
 <attribute name="NAME" x="25.3238" y="-7.0612" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="25.4" y="-12.065" size="1.27" layer="27"/>
 </element>
-<element name="J1" library="SparkFun-Connectors" package="POWER_JACK_SMD" value="5.5x2.1mm Barrel" x="11.43" y="-3.81" smashed="yes">
+<element name="J1" library="SparkFun-Connectors" package="POWER_JACK_SMD" value="5.5x2.1mm Barrel" x="11.43" y="-3.81">
 <attribute name="NAME" x="15.5702" y="-1.016" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="CONN-08106" x="11.43" y="-3.81" size="1.778" layer="27" display="off"/>
 <attribute name="SF_ID" value="PRT-12748" x="11.43" y="-3.81" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="15.24" y="-7.112" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="T1" library="transistor" library_urn="urn:adsk.eagle:library:402" package="TO220" package3d_urn="urn:adsk.eagle:package:29897/1" value="TIP122" x="33.02" y="0" smashed="yes" rot="R270">
-<attribute name="NAME" x="38.227" y="3.81" size="1.778" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="35.56" y="3.937" size="1.778" layer="27" ratio="10" rot="R270"/>
+<element name="TRANOUT" library="transistor" library_urn="urn:adsk.eagle:library:402" package="TO220" package3d_urn="urn:adsk.eagle:package:29897/1" value="TIP122" x="33.02" y="0" rot="R270">
+<attribute name="NAME" x="36.957" y="5.588" size="1.778" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="34.798" y="3.683" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="RESISTOR" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="0207/10" package3d_urn="urn:adsk.eagle:package:13275/1" value="1000" x="30.48" y="7.62" smashed="yes">
-<attribute name="NAME" x="27.432" y="9.144" size="1.27" layer="25" ratio="10"/>
+<element name="OUTREST" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="0207/10" package3d_urn="urn:adsk.eagle:package:13275/1" value="1000" x="30.48" y="7.62">
+<attribute name="NAME" x="26.416" y="8.89" size="1.27" layer="25" ratio="10"/>
 <attribute name="SPICEMODEL" value="NONE" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="28.2194" y="6.985" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="D1" library="_mod_diode" package="DO41-7.6" value="1N5817-T" x="13.97" y="16.51" smashed="yes">
+<element name="5REGDIO" library="_mod_diode" package="DO41-7.6" value="1N5817-T" x="13.97" y="16.51">
 <attribute name="NAME" x="11.938" y="18.161" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="11.938" y="13.589" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="PARRELLCAPACITOR" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="01uf" x="27.94" y="20.32" smashed="yes">
-<attribute name="NAME" x="25.908" y="21.844" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="25.908" y="17.526" size="1.27" layer="27" ratio="10"/>
+<element name="CONTCAP" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C5B2.5" package3d_urn="urn:adsk.eagle:package:5426/1" value="01uf" x="27.94" y="20.32">
+<attribute name="NAME" x="24.13" y="21.082" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="26.67" y="18.542" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="U$1" library="esp8266modules" package="ESP01" value="ESP01" x="-10.16" y="0" smashed="yes">
-<attribute name="NAME" x="-17.16" y="16" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-17.16" y="-11" size="1.27" layer="27"/>
+<element name="MICROCONT" library="esp8266modules" package="ESP01" value="ESP01" x="41.91" y="22.86">
+<attribute name="NAME" x="36.815" y="19.175" size="1.27" layer="25"/>
 </element>
 </elements>
 <signals>
 <signal name="N$1">
-<contactref element="INPUTPOWER" pad="1"/>
-<contactref element="CAPCAITOR2" pad="1"/>
+<contactref element="5VOLTREG" pad="1"/>
+<contactref element="BATCAP" pad="1"/>
 <contactref element="J1" pad="VIN0"/>
 <wire x1="11.43" y1="1.89" x2="11.43" y2="6.35" width="0.254" layer="1"/>
 <wire x1="11.43" y1="6.35" x2="11.02" y2="6.76" width="0.254" layer="1"/>
@@ -845,36 +844,29 @@ design rules under a new name.</description>
 <wire x1="11.35" y1="6.35" x2="15.24" y2="6.35" width="0.254" layer="1"/>
 </signal>
 <signal name="GND">
-<contactref element="CAPCAITOR2" pad="2"/>
-<contactref element="INPUTPOWER" pad="5"/>
-<contactref element="INPUTPOWER" pad="3"/>
-<contactref element="CAPCAITOR1" pad="2"/>
-<contactref element="CONTROLLERPOWER" pad="GND"/>
-<contactref element="CAPCAITOR3" pad="2"/>
-<contactref element="CAPCAITOR4" pad="2"/>
+<contactref element="BATCAP" pad="2"/>
+<contactref element="5VOLTREG" pad="5"/>
+<contactref element="5VOLTREG" pad="3"/>
+<contactref element="5REGCAP" pad="2"/>
+<contactref element="3VOLTREG" pad="GND"/>
+<contactref element="3REGCAP" pad="2"/>
+<contactref element="3REGOUTCAP" pad="2"/>
 <contactref element="SERVOOUT" pad="1"/>
 <contactref element="J1" pad="GND"/>
 <polygon width="0.254" layer="1">
-<vertex x="0" y="38.1"/>
-<vertex x="50.8" y="38.1"/>
-<vertex x="50.8" y="-11.43"/>
-<vertex x="0" y="-11.43"/>
+<vertex x="0" y="38.6588"/>
+<vertex x="49.53" y="38.6588"/>
+<vertex x="49.53" y="-11.811"/>
+<vertex x="0" y="-11.811"/>
 </polygon>
-<contactref element="D1" pad="A"/>
-<wire x1="15.24" y1="24.13" x2="12.7" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="17.78" y1="16.51" x2="15.24" y2="24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="10.94" y1="13.56" x2="17.78" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="10.94" y1="10.16" x2="10.94" y2="13.56" width="0" layer="19" extent="1-1"/>
-<wire x1="20.32" y1="6.35" x2="10.94" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="36.83" x2="12.7" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="27.94" x2="2.54" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="-8.89" x2="20.32" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="-9.51" x2="26.67" y2="-8.89" width="0" layer="19" extent="1-1"/>
+<contactref element="5REGDIO" pad="A"/>
+<contactref element="TRANOUT" pad="3"/>
+<contactref element="MICROCONT" pad="GND"/>
 </signal>
 <signal name="N$3">
-<contactref element="INPUTPOWER" pad="2"/>
-<contactref element="OUTPUTINDUCTOR" pad="1"/>
-<contactref element="D1" pad="C"/>
+<contactref element="5VOLTREG" pad="2"/>
+<contactref element="5REGINDUC" pad="1"/>
+<contactref element="5REGDIO" pad="C"/>
 <wire x1="6.35" y1="16.51" x2="10.16" y2="16.51" width="0.254" layer="1"/>
 <wire x1="7.04" y1="9.76525625" x2="7.04" y2="8.46" width="0.254" layer="1"/>
 <wire x1="8.7274" y1="11.45265625" x2="7.04" y2="9.76525625" width="0.254" layer="1"/>
@@ -882,13 +874,14 @@ design rules under a new name.</description>
 <wire x1="6.35" y1="16.51" x2="8.7274" y2="14.1326" width="0.254" layer="1"/>
 </signal>
 <signal name="N$5">
-<contactref element="INPUTPOWER" pad="4"/>
-<contactref element="CAPCAITOR1" pad="1"/>
-<contactref element="OUTPUTINDUCTOR" pad="2"/>
-<contactref element="CONTROLLERPOWER" pad="IN"/>
-<contactref element="CAPCAITOR3" pad="1"/>
+<contactref element="5VOLTREG" pad="4"/>
+<contactref element="5REGCAP" pad="1"/>
+<contactref element="5REGINDUC" pad="2"/>
+<contactref element="3VOLTREG" pad="IN"/>
+<contactref element="3REGCAP" pad="1"/>
 <contactref element="SERVOOUT" pad="2"/>
-<wire x1="6.35" y1="24.13" x2="10.16" y2="24.13" width="0.254" layer="1"/>
+<wire x1="10.16" y1="23.876" x2="6.604" y2="23.876" width="0.254" layer="1"/>
+<wire x1="6.604" y1="23.876" x2="6.35" y2="24.13" width="0.254" layer="1"/>
 <wire x1="7.04" y1="11.86" x2="5.08" y2="13.82" width="0.254" layer="1"/>
 <wire x1="5.08" y1="13.82" x2="5.08" y2="22.86" width="0.254" layer="1"/>
 <wire x1="5.08" y1="22.86" x2="6.35" y2="24.13" width="0.254" layer="1"/>
@@ -902,41 +895,47 @@ design rules under a new name.</description>
 <wire x1="12.7" y1="17.78" x2="6.35" y2="24.13" width="0.254" layer="1"/>
 </signal>
 <signal name="N$7">
-<contactref element="CONTROLLERPOWER" pad="OUT"/>
-<contactref element="CAPCAITOR4" pad="1"/>
+<contactref element="3VOLTREG" pad="OUT"/>
+<contactref element="3REGOUTCAP" pad="1"/>
 <wire x1="12.7" y1="30.48" x2="10.16" y2="30.48" width="0.254" layer="1"/>
 <wire x1="10.16" y1="30.48" x2="7.62" y2="33.02" width="0.254" layer="1"/>
 <wire x1="7.62" y1="33.02" x2="7.62" y2="36.83" width="0.254" layer="1"/>
-<contactref element="PARRELLCAPACITOR" pad="1"/>
-<wire x1="12.7" y1="30.48" x2="29.75" y2="13.43" width="0.254" layer="1"/>
+<contactref element="CONTCAP" pad="1"/>
 <wire x1="12.7" y1="30.48" x2="22.86" y2="20.32" width="0.254" layer="1"/>
 <wire x1="22.86" y1="20.32" x2="25.4" y2="20.32" width="0.254" layer="1"/>
-<contactref element="U$1" pad="VCC"/>
-<contactref element="PARRELLCAPACITOR" pad="2"/>
-<wire x1="25.4" y1="20.32" x2="30.48" y2="20.32" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.365" y1="-8.1775" x2="22.86" y2="20.32" width="0" layer="19" extent="1-1"/>
+<contactref element="MICROCONT" pad="VCC"/>
+<contactref element="CONTCAP" pad="2"/>
+<wire x1="30.48" y1="20.32" x2="39.37" y2="11.43" width="0.1524" layer="1"/>
+<wire x1="39.37" y1="11.43" x2="43.18" y2="11.43" width="0.1524" layer="1"/>
+<wire x1="43.18" y1="11.43" x2="45.72" y2="13.97" width="0.1524" layer="1"/>
+<wire x1="45.72" y1="13.97" x2="45.72" y2="14.6675" width="0.1524" layer="1"/>
+<wire x1="45.72" y1="14.6675" x2="45.705" y2="14.6825" width="0.1524" layer="1"/>
+<wire x1="25.4" y1="20.32" x2="34.29" y2="11.43" width="0.1524" layer="1"/>
+<wire x1="34.29" y1="11.43" x2="39.37" y2="11.43" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$8">
-<contactref element="RESISTOR" pad="2"/>
-<contactref element="T1" pad="1"/>
+<contactref element="OUTREST" pad="2"/>
+<contactref element="TRANOUT" pad="1"/>
 <wire x1="35.56" y1="7.62" x2="30.48" y2="2.54" width="0.254" layer="1"/>
 <wire x1="26.67" y1="2.54" x2="30.48" y2="2.54" width="0.254" layer="1"/>
 </signal>
 <signal name="N$10">
-<contactref element="T1" pad="2"/>
+<contactref element="TRANOUT" pad="2"/>
 <contactref element="SERVOOUT" pad="3"/>
 <wire x1="26.67" y1="0" x2="31.75" y2="-5.08" width="0.254" layer="1"/>
 <wire x1="31.75" y1="-5.08" x2="31.75" y2="-8.89" width="0.254" layer="1"/>
 </signal>
-<signal name="N$2">
-<contactref element="T1" pad="3"/>
-<contactref element="U$1" pad="GND"/>
-<wire x1="-13.985" y1="-5.6375" x2="26.67" y2="-2.54" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$9">
-<contactref element="RESISTOR" pad="1"/>
-<contactref element="U$1" pad="GPIO0"/>
-<wire x1="-8.905" y1="-5.6375" x2="25.4" y2="7.62" width="0" layer="19" extent="1-1"/>
+<contactref element="OUTREST" pad="1"/>
+<contactref element="MICROCONT" pad="GPIO0"/>
+<wire x1="46.0705875" y1="15.5651" x2="46.3956875" y2="15.24" width="0.1524" layer="1"/>
+<wire x1="46.3956875" y1="15.24" x2="46.99" y2="15.24" width="0.1524" layer="1"/>
+<wire x1="43.165" y1="17.2225" x2="44.8224" y2="15.5651" width="0.1524" layer="1"/>
+<wire x1="44.8224" y1="15.5651" x2="46.0705875" y2="15.5651" width="0.1524" layer="1"/>
+<wire x1="46.99" y1="15.24" x2="48.26" y2="13.97" width="0.1524" layer="1"/>
+<wire x1="48.26" y1="13.97" x2="44.45" y2="10.16" width="0.1524" layer="1"/>
+<wire x1="44.45" y1="10.16" x2="27.94" y2="10.16" width="0.1524" layer="1"/>
+<wire x1="27.94" y1="10.16" x2="25.4" y2="7.62" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
