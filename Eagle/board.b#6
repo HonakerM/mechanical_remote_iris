@@ -804,7 +804,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="25.0698" y="-7.3152" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="25.4" y="-12.065" size="1.27" layer="27"/>
 </element>
-<element name="JACK" library="SparkFun-Connectors" package="POWER_JACK_SMD" value="5.5x2.1mm Barrel" x="11.43" y="-3.81">
+<element name="POWJACK" library="SparkFun-Connectors" package="POWER_JACK_SMD" value="5.5x2.1mm Barrel" x="11.43" y="-3.81">
 <attribute name="NAME" x="15.5702" y="-1.016" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="CONN-08106" x="11.43" y="-3.81" size="1.778" layer="27" display="off"/>
 <attribute name="SF_ID" value="PRT-12748" x="11.43" y="-3.81" size="1.778" layer="27" display="off"/>
@@ -836,7 +836,7 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="5VOLTREG" pad="1"/>
 <contactref element="BATCAP" pad="1"/>
-<contactref element="JACK" pad="VIN0"/>
+<contactref element="POWJACK" pad="VIN0"/>
 <wire x1="11.43" y1="1.89" x2="11.43" y2="6.35" width="0.254" layer="1"/>
 <wire x1="11.43" y1="6.35" x2="11.02" y2="6.76" width="0.254" layer="1"/>
 <wire x1="11.02" y1="6.76" x2="10.94" y2="6.76" width="0.254" layer="1"/>
@@ -852,7 +852,7 @@ design rules under a new name.</description>
 <contactref element="3REGCAP" pad="2"/>
 <contactref element="3REGOUTCAP" pad="2"/>
 <contactref element="SERVOOUT" pad="1"/>
-<contactref element="JACK" pad="GND"/>
+<contactref element="POWJACK" pad="GND"/>
 <polygon width="0.254" layer="1">
 <vertex x="0" y="38.6588"/>
 <vertex x="49.53" y="38.6588"/>
